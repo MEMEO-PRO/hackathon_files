@@ -10,7 +10,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-URI = "mongodb+srv://sunnyeng1985:yashddes@farmer.2kpxrp1.mongodb.net/?retryWrites=true&w=majority"
+URI = ""
 app.secret_key = '12345678'
 
 client = MongoClient(URI)
