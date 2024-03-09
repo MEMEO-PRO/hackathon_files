@@ -1,0 +1,89 @@
+<!-- farm_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .data-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="data-container">
+            <h1>User Data</h1>
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td>{{ user_data.name }}</td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td>{{ user_data.email }}</td>
+                </tr>
+                <tr>
+                    <th>Current Crop:</th>
+                    <td>{{ user_data.current_crop }}</td>
+                </tr>
+                <tr>
+                    <th>Soil Conditions:</th>
+                    <td>{{ user_data.soil_conditions }}</td>
+                </tr>
+                <tr>
+                    <th>Farm Area:</th>
+                    <td>{{ user_data.farm_area }}</td>
+                </tr>
+                <tr>
+                    <th>Past Year Yield:</th>
+                    <td>{{ user_data.past_year_yield }}</td>
+                </tr>
+                <tr>
+                    <th>Latitude:</th>
+                    <td>{{ user_data.latitude }}</td>
+                </tr>
+                <tr>
+                    <th>Longitude:</th>
+                    <td>{{ user_data.longitude }}</td>
+                </tr>
+                <tr>
+                    <th>Nitrogen Content:</th>
+                    <td>{{ user_data.nitrogen }}</td>
+                </tr>
+                <tr>
+                    <th>Phosphorous Content:</th>
+                    <td>{{ user_data.phosphorous }}</td>
+                </tr>
+                <tr>
+                    <th>Potassium Content:</th>
+                    <td>{{ user_data.potassium }}</td>
+                </tr>
+                <!-- Add more rows for additional data fields if needed -->
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farm Dashboard</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<h1>Farm Dashboard</h1>
+<p>Choose an option:</p>
+<button class="button" onclick="location.href='/login'">Login</button>
+<button class="button" onclick="location.href='/signup'">Sign Up</button>
+<button class="button" onclick="location.href='/updatedetails'">Update Farm Data</button>
+<button class="button" onclick="location.href='/weatherPrediction'">Weather Prediction</button>
+<button class="button" onclick="location.href='/recommendations'">Recommendations</button>
+<button class="button" onclick="location.href='/farmdata'">Current Farm Data</button>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+</head>
+<body>
+    <h1>Weather Prediction</h1>
+    
+    <h2>Hourly Weather Data</h2>
+    <!-- Display hourly weather data as a table -->
+    {{ hourly_data | safe }}
+
+    <h2>Daily Weather Data</h2>
+    <!-- Display daily weather data as a table -->
+    {{ daily_data | safe }}
+</body>
+</html> 
+
